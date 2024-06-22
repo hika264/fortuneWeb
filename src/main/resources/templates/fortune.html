@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fortune</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="fortune-container">
+		<h1>今日の運勢</h1>
+		<div class="fortune-text">
+			<p class="fortune-text">あなたの今日の運勢は...</p>
+			<strong th:text="${fortune}"></strong>
+		</div>
+		
+		<div class="fortune-text">
+			<p>ラッキーカラーは...</p>
+			<strong class="lucky-color" th:style="'background-color:' + ${luckyColor}" th:text="${luckyColor}" ></strong>
+		</div>
+	</div>
+</body>
+</html>

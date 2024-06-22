@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.fortune-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.fortune-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.lucky-color {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+input{
+	height: 26px;
+	margin:auto;
+}
+
+/* ボタンの基本スタイル */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffe0; /* ボタンの背景色 */
+  color: #000; /* テキストの色 */
+  border: none;
+  border-radius: 25px; /* 角丸 */
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase; /* テキストを大文字に変換 */
+  letter-spacing: 1px; /* 文字間隔 */
+  cursor: pointer;
+  outline: none; /* クリック時の枠線を削除 */
+  transition: all 0.3s ease; /* 全ての変化をアニメーション化 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影 */
+}
+
+/* マウスオーバー時のスタイル */
+.button:hover {
+  background-color: #ff8c00; /* マウスオーバー時の背景色 */
+  transform: translateY(-2px); /* ホバーエフェクト：上に移動 */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* ホバーエフェクト：影を強調 */
+}
+
+/* ボタンのアクティブ時のスタイル */
+.button:active {
+  transform: translateY(1px); /* クリック時のボタンを少し下に移動 */
+  box-shadow: none; /* クリック時の影を削除 */
+}
